@@ -5,10 +5,10 @@ require "xcodesnippet/version"
 
 Gem::Specification.new do |s|
   s.name        = "xcodesnippet"
-  s.authors     = ["Mattt Thompson"]
-  s.email       = "m@mattt.me"
+  s.authors     = ["Andy Cui"]
+  s.email       = "andy380743909@gmail.com"
   s.license     = "MIT"
-  s.homepage    = "http://mattt.me"
+  s.homepage    = ""
   s.version     = XcodeSnippet::VERSION
   s.platform    = Gem::Platform::RUBY
   s.summary     = "xcodesnippet"
