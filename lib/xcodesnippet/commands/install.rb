@@ -20,11 +20,19 @@ command :install do |c|
     say_error "Input file is empty" and abort if @content.empty?
 
     extract_front_matter!
-
-    @output_filepath = File.join(USER_XCODE_SNIPPETS_DIRECTORY, @snippet.identifier + ".codesnippet")
+    
+    # UUID+basename is better than single UUID
+    # @output_filepath = File.join(USER_XCODE_SNIPPETS_DIRECTORY, @snippet.identifier + ".codesnippet")
+    file_basename = File.basename(@input_filepath, File.extname(@input_filepath))
+    @output_filepath = File.join(USER_XCODE_SNIPPETS_DIRECTORY, @snippet.identifier + file_basename + ".codesnippet")
+    
     begin
       FileUtils.mkdir_p(USER_XCODE_SNIPPETS_DIRECTORY)
-
+      # test if file name conflicts
+      
+      # if conflicts backup oldfile
+      
+      # else write to file
       File.open(@output_filepath, 'w') do |f|
         f.write @snippet.to_plist
       end
