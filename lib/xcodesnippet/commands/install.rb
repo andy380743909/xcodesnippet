@@ -24,7 +24,7 @@ command :install do |c|
     # UUID+basename is better than single UUID
     # @output_filepath = File.join(USER_XCODE_SNIPPETS_DIRECTORY, @snippet.identifier + ".codesnippet")
     file_basename = File.basename(@input_filepath, File.extname(@input_filepath))
-    @output_filepath = File.join(USER_XCODE_SNIPPETS_DIRECTORY, @snippet.identifier + file_basename + ".codesnippet")
+    @output_filepath = File.join(USER_XCODE_SNIPPETS_DIRECTORY, file_basename + @snippet.identifier + ".codesnippet")
     
     begin
       FileUtils.mkdir_p(USER_XCODE_SNIPPETS_DIRECTORY)
