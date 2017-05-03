@@ -3,18 +3,18 @@
 require 'commander/import'
 
 $:.push File.expand_path("../../lib", __FILE__)
-require 'xcodesnippet'
+require 'oss_xcodesnippet'
 
 HighLine.track_eof = false # Fix for built-in Ruby
 Signal.trap("INT") {} # Suppress backtrace when exiting command
 
-program :version, XcodeSnippet::VERSION
+program :version, OSSXcodeSnippet::VERSION
 program :description, 'A command-line interface for installing Xcode Snippets'
 
-program :help, 'Author', 'Mattt Thompson <m@mattt.me>'
-program :help, 'Website', 'https://github.com/mattt'
+program :help, 'Author', 'Andy Cui'
+program :help, 'Website', 'https://github.com/andy380743909/xcodesnippet'
 program :help_formatter, :compact
 
 default_command :help
 
-require 'xcodesnippet/commands'
+require 'oss_xcodesnippet/commands'

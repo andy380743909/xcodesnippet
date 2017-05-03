@@ -48,7 +48,7 @@ end
 private
 
 def extract_front_matter!
-  @snippet = XcodeSnippet::Snippet.new
+  @snippet = OSSXcodeSnippet::Snippet.new
 
   front_matter, contents = YAML::FrontMatter.extract(@content)
 

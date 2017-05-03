@@ -1,6 +1,6 @@
 require 'plist'
 
-module XcodeSnippet
+module OSSXcodeSnippet
   class Snippet
     attr_accessor :completion_prefix
     attr_accessor :completion_scopes

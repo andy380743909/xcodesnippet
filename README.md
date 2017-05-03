@@ -4,7 +4,7 @@
 ## Installation
 
 ```
-$ gem install xcodesnippet
+$ gem install oss_xcodesnippet
 ```
 
 ## Usage
@@ -24,12 +24,16 @@ println("Hello, World!")
 #### Terminal Command
 
 ```
-$ xcodesnippet install path/to/source.m
+$ oss_xcodesnippet install path/to/source.m
 ```
 
 ---
 
 ## Creator
+
+Andy Cui
+
+Original Author:
 
 Mattt Thompson ([@mattt](https://twitter.com/mattt))
 
