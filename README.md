@@ -1,5 +1,9 @@
-# xcodesnippet
+# oss_xcodesnippet
 *A command-line interface for installing Xcode Snippets*
+
+## Diff with xcodesnippet
+
+use `{sourcefilename+UUID}.codesnippet` as filename, not `{UUID}.codesnippet`. so we can figure out what the codesnippet is quickly.
 
 ## Installation
 
